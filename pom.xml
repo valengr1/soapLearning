@@ -55,7 +55,7 @@
 			<plugin>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
-				<version>0.14.0</version>
+				<version>0.15.3</version>
 				<executions>
 					<execution>
 						<goals>
@@ -69,7 +69,7 @@
 					<generateDirectory>${project.basedir}/src/main/java</generateDirectory>
 					<schemas>
 						<schema>
-							<url>http://www.dneonline.com/calculator.asmx?WSDL</url>
+							<url>http://istp1service.azurewebsites.net/LoginService.svc?singleWsdl</url>
 						</schema>
 					</schemas>
 

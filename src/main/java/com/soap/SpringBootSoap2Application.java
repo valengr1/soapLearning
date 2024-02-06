@@ -1,7 +1,8 @@
 package com.soap;
 
 import com.soap.client.SoapClient;
-import com.soap.wsdl.AddResponse;
+import com.soap.wsdl.Autorizacion;
+import com.soap.wsdl.SolicitarAutorizacionResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -19,8 +20,8 @@ public class SpringBootSoap2Application {
 	@Bean
 	CommandLineRunner init(SoapClient soapClient) {
 		return (args) -> {
-			AddResponse response = soapClient.getAddResponse(1, 2);
-			LOGGER.info("El resultado de la suma entre {} y {} es {}", 1, 2, response.getAddResult());
+			SolicitarAutorizacionResponse response = soapClient.getSolicitarAutorizacionResponse("222D6106-B8FA-4F08-B0E6-A2E89AE02247");
+			LOGGER.info(response.getSolicitarAutorizacionResult().getValue().getPuntoVenta().toString());
 		};
 	}
 }

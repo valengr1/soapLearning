@@ -3,14 +3,14 @@
       
     <!--
 
-Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
-Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Este archivo ha sido generado por Eclipse Implementation of JAXB v2.3.7 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
 Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-Generado el: 2024.02.01 a las 11:04:04 AM ART 
+Generado el: 2024.02.06 a las 01:19:34 AM ART 
 
   -->
       
-    <bindings xmlns:tns="http://tempuri.org/" if-exists="true" scd="x-schema::tns">
+    <bindings xmlns:tns="http://ISTP1.Service.Contracts.Service" if-exists="true" scd="x-schema::tns">
             
         <schemaBindings map="false">
                   
@@ -18,51 +18,113 @@ Generado el: 2024.02.01 a las 11:04:04 AM ART
                 
         </schemaBindings>
             
-        <bindings if-exists="true" scd="tns:Add">
+        <bindings if-exists="true" scd="tns:SolicitarAutorizacion">
                   
-            <class ref="com.soap.wsdl.Add"/>
+            <class ref="com.soap.wsdl.SolicitarAutorizacion"/>
                 
         </bindings>
             
-        <bindings if-exists="true" scd="tns:AddResponse">
+        <bindings if-exists="true" scd="tns:SolicitarAutorizacionResponse">
                   
-            <class ref="com.soap.wsdl.AddResponse"/>
+            <class ref="com.soap.wsdl.SolicitarAutorizacionResponse"/>
                 
         </bindings>
             
-        <bindings if-exists="true" scd="tns:Subtract">
+        <bindings if-exists="true" scd="tns:SolicitarUltimosComprobantes">
                   
-            <class ref="com.soap.wsdl.Subtract"/>
+            <class ref="com.soap.wsdl.SolicitarUltimosComprobantes"/>
                 
         </bindings>
             
-        <bindings if-exists="true" scd="tns:SubtractResponse">
+        <bindings if-exists="true" scd="tns:SolicitarUltimosComprobantesResponse">
                   
-            <class ref="com.soap.wsdl.SubtractResponse"/>
+            <class ref="com.soap.wsdl.SolicitarUltimosComprobantesResponse"/>
                 
         </bindings>
             
-        <bindings if-exists="true" scd="tns:Multiply">
+        <bindings if-exists="true" scd="tns:SolicitarCae">
                   
-            <class ref="com.soap.wsdl.Multiply"/>
+            <class ref="com.soap.wsdl.SolicitarCae"/>
                 
         </bindings>
             
-        <bindings if-exists="true" scd="tns:MultiplyResponse">
+        <bindings if-exists="true" scd="tns:SolicitarCaeResponse">
                   
-            <class ref="com.soap.wsdl.MultiplyResponse"/>
+            <class ref="com.soap.wsdl.SolicitarCaeResponse"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="http://schemas.datacontract.org/2004/07/SGE.Service.Contracts.Data" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.soap.wsdl"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:Autorizacion">
+                  
+            <class ref="com.soap.wsdl.Autorizacion"/>
                 
         </bindings>
             
-        <bindings if-exists="true" scd="tns:Divide">
+        <bindings if-exists="true" scd="~tns:UltimoComprobante">
                   
-            <class ref="com.soap.wsdl.Divide"/>
+            <class ref="com.soap.wsdl.UltimoComprobante"/>
                 
         </bindings>
             
-        <bindings if-exists="true" scd="tns:DivideResponse">
+        <bindings if-exists="true" scd="~tns:SolicitudAutorizacion">
                   
-            <class ref="com.soap.wsdl.DivideResponse"/>
+            <class ref="com.soap.wsdl.SolicitudAutorizacion"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ResultadoSolicitudAutorizacion">
+                  
+            <class ref="com.soap.wsdl.ResultadoSolicitudAutorizacion"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ArrayOfComprobante">
+                  
+            <class ref="com.soap.wsdl.ArrayOfComprobante"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:Comprobante">
+                  
+            <class ref="com.soap.wsdl.Comprobante"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="http://schemas.datacontract.org/2004/07/SGE.Fwk.Domain.Core" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.soap.wsdl"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:TipoComprobante">
+                  
+            <typesafeEnumClass ref="com.soap.wsdl.TipoComprobante"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:TipoDocumento">
+                  
+            <typesafeEnumClass ref="com.soap.wsdl.TipoDocumento"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:EstadoSolicitud">
+                  
+            <typesafeEnumClass ref="com.soap.wsdl.EstadoSolicitud"/>
                 
         </bindings>
           
